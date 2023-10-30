@@ -47,38 +47,44 @@
     </header>
 
     <section id="contact">
-        <h1>Contact</h1>
-        <p>Je kunt me bereiken via:</p>
-        <ul>
-            <li>E-mail: <a href="mailto:r0696840@student.thomasmore.be">0696840@student.thomasmore.be</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/benny-van-beeck-072136249/">https://www.linkedin.com/in/benny-van-beeck-072136249/</a></li>
-        </ul>
-        <p>Of stuur me een bericht:</p>
-        <form action="https://tm-statweb.be/sendmail.php" method="post">
-            <div>
-                <label for="naam">Naam:</label>
-                <input type="text" id="naam" name="naam" required>
-            </div>     
-            <div>
-                <label for="email">E-mailadres:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="onderwerp">Onderwerp:</label>
-                <input type="text" id="onderwerp" name="onderwerp" required>
-            </div>
-            <div>
-                <label for="bericht">Bericht:</label>
-                <textarea id="bericht" name="bericht" rows="4" cols="50" required></textarea>
-            </div>      
-            <div>  
-                 <input type="hidden" name="studentemail" value="r0969840@student.thomasmore.be">
-            </div>
-            <div>
-                <input type="submit" value="Versturen">
-            </div>
-        </form>
-    </section> 
+        <div class="container">
+            <h1>Contact</h1>
+            <p>Je kunt me bereiken via:</p>
+            <ul>
+                <li>E-mail: <a href="mailto:r0696840@student.thomasmore.be">0696840@student.thomasmore.be</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/benny-van-beeck-072136249/">https://www.linkedin.com/in/benny-van-beeck-072136249/</a></li>
+            </ul>
+            <p>Of stuur me een bericht:</p>
+            <form action="https://tm-statweb.be/sendmail.php" method="post" id="contact-form">
+                <div class="mb-3">
+                    <label for="naam" class="form-label">Naam en voornaam:</label>
+                    <input type="text" class="form-control" id="naam" name="naam" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mailadres:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="interesse" class="form-label">Interesse in skills:</label>
+                    <select class="form-select" id="interesse" name="interesse">
+                        <option value="optie1">Web Development</option>
+                        <option value="optie2">Software Analyse en Ontwerp</option>
+                        <option value="optie3">Database Management</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="vraag" class="form-label">Vraag:</label>
+                    <textarea class="form-control" id="vraag" name="vraag" rows="4" required></textarea>
+                </div>
+                <input type="hidden" name="studentemail" value="r0969840@student.thomasmore.be">
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Versturen</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
     <footer class="bg-dark text-white p-4">
         <div class="container">
             <div class="row">
