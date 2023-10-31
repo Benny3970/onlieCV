@@ -7,19 +7,16 @@
     <link rel="icon" href="../img/favicon.png" type="image/png">
     <link rel="stylesheet" href="../vendor/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-<style>
-    .jumbotron {
-        background-image: url(../img/giphy.gif);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-</style>
+    <link rel="stylesheet" href="../css/styles.css">
+
 </head>
-<div class="bg-secondary bg-gradient">
+
+<div class="bg-dark">
+
 <body>
+
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-secondary border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="../img/favicoNavbar.png" alt="logo" width="30" height="24">
@@ -45,14 +42,11 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-secondary" type="submit">Search</button>
-                </form>
               </div>
             </div>
           </nav>
     </header>
+
 
     <section class="jumbotron text-center bg-dark text-white">
         <div class="container">
@@ -64,9 +58,12 @@
 
     <section class="container my-5">
         <div class="row">
+    
             <div class="col-md-4">
-                <div class="card">
-                    <img src="../img/fotoportfolio.jpeg" class="card-img-top" alt="Benny Van Beeck">
+                <div class="card bg-secondary">
+                    <a href="hobby.html">
+                        <img src="../img/fotoportfolio.jpeg" class="card-img-top" alt="Benny Van Beeck">
+                    </a>
                     <div class="card-body">
                         <h5 class="card-title">Benny Van Beeck</h5>
                         <p class="card-text">Graduaat Programmeren, Thomas More te Geel</p>
@@ -74,30 +71,35 @@
                     </div>
                 </div>
             </div>
-
+    
             <div class="col-md-4">
-                <div class="card">
-                    <img src="../img/studie.jpg" class="card-img-top" alt="studie">
+                <div class ="card bg-secondary">
+                    <a href="ervaring.html">
+                        <img src="../img/studie.jpg" class="card-img-top" alt="studie">
+                    </a>
                     <div class="card-body">
                         <h5 class="card-title"><a href="ervaring.html">Studie</a></h5>
                         <p class="card-text">Met mijn recent afgeronde studie in softwareontwikkeling, ben ik een nieuwsgierige, creatieve en logisch denkende programmeur met sterke basiskennis van software en hardware, bekwaam in de programmeertaal C# op het .NET-platform. Mijn flexibele avondopleiding laat zien dat ik toegewijd ben om mijn passie voor coderen te combineren met mijn werk- en gezinsleven, en mijn projectwerk en stage-ervaring stellen me in staat om direct bij te dragen aan innovatieve softwareoplossingen.</p>
                     </div>
                 </div>
             </div>
-
+    
             <div class="col-md-4">
-                <div class="card">
-                    <img src="../img/werk.jpg" class="card-img-top" alt="werk">
+                <div class="card bg-secondary">
+                    <a href="cv.html">
+                        <img src="../img/werk.jpg" class="card-img-top" alt="werk">
+                    </a>
                     <div class="card-body">
                         <h5 class="card-title"><a href="cv.html">Werk ervaring</a></h5>
                         <p class="card-text">Met 13 jaar ervaring als projectleider in de bouwsector heb ik een bewezen staat van dienst in het coördineren en beheren van complexe projecten met strakke deadlines. Mijn vermogen om teams te leiden, problemen op te lossen en effectief te communiceren, gecombineerd met mijn gedrevenheid voor detail en resultaatgerichtheid, vormen sterke troeven voor mijn overgang naar een carrière als programmeur. Deze ervaring heeft me geleerd om gestructureerd te werken en projecten succesvol af te ronden, wat naadloos aansluit bij de vereisten van de IT-wereld.</p>
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
-    
-    <footer class="bg-dark text-white p-4">
+
+    <footer class="bg-secondary text-white p-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
