@@ -36,7 +36,7 @@
     color: #494f56;
     text-decoration: none; 
     font-weight: bold; 
-    transition: color 5s; 
+    transition: color 10s; 
 }
 
 .bg-dark:hover a {
